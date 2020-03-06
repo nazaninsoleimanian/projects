@@ -1,0 +1,91 @@
+/*big tablets to 1200px: from 1024px to 1200px*/
+@media only screen (max-width: 1200px){
+    
+}
+/*small tablets to big tablets: from 768px to 1023px*/
+@media only screen and (max-width: 1023px){
+    .sub-col {
+        padding: 1em;
+    }
+    .bg-home {
+        top: -4.5em;
+        left: 42%;
+        padding: 3.7em;
+    }
+}
+/*small phones to small tablets: from 481px to 767px;*/
+@media only screen and (max-width:767px){
+    .bg-home {
+        top: -4em;
+        left: 40.5%;
+        padding: 3em;
+        border: 1em solid #fff; 
+    }
+    .bg-home i {
+        top: 3.5em;
+        left: 38%;
+        font-size: 120%;
+    }
+    main {
+        padding-top: 1em;
+    }
+    .first-col,
+    .second-col {
+        float: left;
+        width: 49.99%;
+    }
+    .sub-col {
+        width: 100%;
+        padding: 0.5em;
+    }
+    .sub-col img {
+        margin-bottom: 0.5em;
+    }  
+    .foot-container .nav-bar .nav-item {
+        font-size: 140%;
+    }
+    h1, h2 {
+        font-size: 140%;
+    }
+    .bg-footer .foot-container {
+        font-size: 85%;
+}
+}
+/*small phones: from 0 to 480px;*/
+@media only screen and (max-width: 480px){
+    .bg-home {
+        top: -3.2em;
+        left: 38%;
+        padding: 2.5em;
+        border: 0.7em solid #fff;
+    }
+    .bg-home i {
+        top: 3.5em;
+        left: 38%;
+        font-size: 100%;
+    }
+    .first-col {
+        margin-top: 1.5em;
+    }
+    .first-col,
+    .second-col {
+        float: left;
+        width: 100%;
+    }
+    .sub-col {
+        width: 100%;
+        padding: 0 1.5em;
+    }
+    .sub-col img {
+        margin-bottom: 0.5em;
+    }
+    .foot-container .nav-bar .nav-item {
+        font-size: 130%;
+    }
+    h1, h2 {
+        font-size: 130%;
+    }
+    .bg-footer .foot-container {
+        font-size: 80%;
+}
+}

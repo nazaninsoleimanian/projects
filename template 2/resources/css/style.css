@@ -1,0 +1,106 @@
+/*BASIC SETUP*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*REUSABLE COMPONENTS*/
+.container {
+    margin: 0 auto;
+}
+/*HEADER*/
+.home {
+    position: relative;
+    width: 100%;
+}
+.bg-home {
+    position: absolute;
+    top: -5.5em;
+    left: 44%;
+    background-color: #E74C3C;
+    color: #fff;
+    padding: 4em;
+    border-radius: 50%;
+    border: 1em solid #fff; 
+    display: inline-block;  
+}
+.bg-home i {
+    display: inline-block;
+    position: absolute;
+    top: 2.3em;
+    left: 36.3%;
+    color: #ffffff;
+    font-size: 200%;
+}
+/*MAIN*/
+.sub-col {
+    float: left;
+    width: 25%;
+    padding: 1.5em;
+}
+.sub-col img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+/*FOOTER*/
+footer {
+    padding-top: 5%;
+    clear: left;
+}
+.bg-footer {
+    background-color: rgb(248, 93, 93);
+    width: 100%;
+    height: 70vh;
+    margin: 0 auto;  
+}
+.bg-footer .foot-container {
+    text-align: center;
+    width: 80%;
+    color: #ffffff;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+.foot-container .nav-bar .nav-item {
+    display: inline-block;
+    padding: 10px;
+    font-size: 150%;
+}
+.foot-container .nav-bar .nav-item a {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+}
+.bg-footer .foot-container nav::after {
+    content: " ";
+    display: block;
+    width: 80%;
+    height: 1px;
+    margin: 15px auto;
+    background-color: rgb(255, 255, 255)
+}
+.foot-container .copy-right p {
+    padding-top: 10px;
+}
+.foot-container .copy-right p :first-child {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: underline dotted;
+}
+.foot-container .copy-right p :last-child {
+    text-transform: capitalize;
+    text-decoration: underline dotted;
+    color: #ffffff;
+}
+h1, h2 {
+    font-size: 150%;
+}
+h2 {
+    margin-bottom: 30px;
+}
+p { 
+    margin: 30px 0 60px;
+    line-height: 1.5;
+}
+
+

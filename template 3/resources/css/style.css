@@ -1,0 +1,187 @@
+/*---------BASIC SETUP----------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    background-color: rgb(223, 221, 221);
+    font-size: 20px;
+    color: rgb(116, 116, 116);
+    text-rendering: optimizeLegibility; 
+}
+.clearfix {zoom: 1;}                        
+.clearfix:after { 
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0%;
+    visibility: hidden;
+}
+/*-----------REUSABLE COMPONENTS------------*/
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+.section {
+    width: 100%;
+    margin: 0 auto;
+}
+/*CIRCLE*/
+.circle-white1,
+.circle-white2 {
+    border-radius: 50%;
+    width: 35%;
+    height: 60%;
+    position: absolute;
+    background-color: #ffffff;
+    left: 14%;
+}
+.circle-white1 {
+    top: 10%;
+}
+.circle-white2 {
+    top: 20%;
+}
+.circle-img1, 
+.circle-img2 {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+}
+.circle-img1 {
+    background-image: url(../img/img-01.jpg);  
+    width: 37%;
+    height: 105%;
+    top: -8%;
+}
+.circle-img2{
+    background-image: url(../img/img-02.jpg);
+    width: 37%;
+    height: 90%;
+    top: -2%;
+}
+/*BTN*/
+.btn {
+    background-color: #1c73bb;
+    color: #aed1ee;
+    border-radius: 5px;
+    border: 1px solid #1c73bb;
+    padding: 0.5em 1em;
+}
+/*-----------SECTION ONE-------------*/
+.section-one {
+    width: 100%;
+    height: 120vh;
+    background-image: url(../img/spot-bg-01.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    clip-path: polygon(100% 0, 100% 82%, 0 92%, 0 0);
+    position: relative;
+}
+.text-one {
+    text-align: center;
+    padding-top: 1em;
+}
+.text-one h1 {
+    color: #ca0076;
+    font-size: 200%;
+}
+.text-one h2 {
+    font-size: 100%;
+    color: #1c73bb;
+}
+.text-one p {
+    font-size: 80%;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 2em 4em 2em 3.5em;
+}
+/*-------------SECTION TWO---------------*/
+.section-two {
+    height: 70vh;
+    position: relative;
+}
+.text-two {
+    position: absolute;
+    width: 30%;
+    top: 0;
+    left: 16%;
+}
+.text-two h3 {
+    font-size: 110%;
+    color: #1c73bb;
+}
+.text-two p {
+    line-height: 1.5;
+    padding-top: 1em;
+    font-size: 80%;
+}
+.text-two .btn {
+position: absolute;
+top: 110%;
+left: 62%;
+}
+/*-------------SECTION THREE-------------*/
+.section-three {
+    background-image: url(../img/spot-bg-02.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    clip-path: polygon(100% 8%, 100% 92%, 0 100%, 0 0);
+    width: 100%;
+    height: 120vh;
+    position: relative;
+}
+.text-three {
+    text-align: center;
+    padding: 4em 5em 2em 4em;
+    line-height: 1.5;
+}
+.text-three h3 {
+    color: #ca0076;
+}
+.text-three p {
+    font-size: 80%;
+    text-align: justify;
+    padding-bottom: 1em;
+}
+/*-------------SECTION FOUR-------------*/
+.section-four {
+    height: 80vh;
+    position: relative;
+}
+form {
+    margin: 3em 0 0 10em;
+}
+#name,
+#email,
+#text {
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ca0076; 
+    font-size: 80%;
+    margin: 3em 0 4 1em;
+    width: 25%;
+    padding-left: 0.5em;
+}
+#text {
+    height: 65%;
+}
+#submit {
+    background-color: #ca0076;
+    color: #aed1ee;
+    border-radius: 5px;
+    border: 1px solid #ca0076;
+    padding: 0.5em 1.5em;
+    margin: 2em 0 0 7.5em;
+}
+.copy-right p {
+    font-size: 65%;
+    padding: 6em 0 0 15em;
+}
