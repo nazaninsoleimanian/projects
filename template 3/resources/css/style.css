@@ -11,7 +11,9 @@ body {
     color: rgb(116, 116, 116);
     text-rendering: optimizeLegibility; 
 }
-.clearfix {zoom: 1;}                        
+.clearfix {
+    *zoom: 1;
+}                        
 .clearfix:after { 
     content: '.';
     clear: both;
@@ -21,7 +23,6 @@ body {
 }
 /*-----------REUSABLE COMPONENTS------------*/
 .container {
-    width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
 }
@@ -49,21 +50,21 @@ body {
 .circle-img2 {
     background-position: center;
     background-size: cover;
-    position: absolute;
+    float: right;
     border-radius: 50%;
-    left: 50%;
+    margin-right: 6em;
 }
 .circle-img1 {
     background-image: url(../img/img-01.jpg);  
     width: 37%;
     height: 105%;
-    top: -8%;
+    margin-top: -4%;
 }
 .circle-img2{
     background-image: url(../img/img-02.jpg);
     width: 37%;
     height: 90%;
-    top: -2%;
+    margin-top: 1em%;
 }
 /*BTN*/
 .btn {
@@ -105,13 +106,11 @@ body {
 /*-------------SECTION TWO---------------*/
 .section-two {
     height: 70vh;
-    position: relative;
 }
 .text-two {
-    position: absolute;
+    float: left;
     width: 30%;
-    top: 0;
-    left: 16%;
+    margin-left: 10em;
 }
 .text-two h3 {
     font-size: 110%;
@@ -123,10 +122,9 @@ body {
     font-size: 80%;
 }
 .text-two .btn {
-position: absolute;
-top: 110%;
-left: 62%;
-}
+    float: right;
+    margin-top: 2em;
+    }
 /*-------------SECTION THREE-------------*/
 .section-three {
     background-image: url(../img/spot-bg-02.jpg);
@@ -140,11 +138,12 @@ left: 62%;
 }
 .text-three {
     text-align: center;
-    padding: 4em 5em 2em 4em;
-    line-height: 1.5;
+    padding: 3.5em 4em 2em 4em;
+    line-height: 1.7;
 }
 .text-three h3 {
     color: #ca0076;
+    font-size: 110%;
 }
 .text-three p {
     font-size: 80%;
@@ -154,10 +153,12 @@ left: 62%;
 /*-------------SECTION FOUR-------------*/
 .section-four {
     height: 80vh;
-    position: relative;
 }
 form {
-    margin: 3em 0 0 10em;
+    margin: 3em 0 0 4em;
+    padding-left: 6em;
+    float: left;
+    width: 44%;
 }
 #name,
 #email,
@@ -167,7 +168,7 @@ form {
     border-bottom: 1px solid #ca0076; 
     font-size: 80%;
     margin: 3em 0 4 1em;
-    width: 25%;
+    width: 60%;
     padding-left: 0.5em;
 }
 #text {
@@ -181,7 +182,9 @@ form {
     padding: 0.5em 1.5em;
     margin: 2em 0 0 7.5em;
 }
-.copy-right p {
+
+.copy-right {
+    clear: both;
     font-size: 65%;
-    padding: 6em 0 0 15em;
+    padding: 0.5em 0 0 12em;
 }

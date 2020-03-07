@@ -1,0 +1,182 @@
+/*from 1024px to 1200px*/
+@media only screen and (max-width: 1200px){
+.circle-white1,
+.circle-white2 {
+    width: 38%;
+    height: 58%;
+    left: 16%;
+}
+
+}
+/*from 767px to 1024px*/
+@media only screen and (max-width: 1024px){
+.circle-white1,
+.circle-white2 {
+    width: 45%;
+    height: 55%;
+    left: 6%;
+}
+.section-two {
+    height: 80vh;
+}
+.text-two {
+    width: 30%;
+    margin-left: 5em;
+}
+
+.circle-img1,
+.circle-img2 {
+    width: 45%;
+    height: 90%;
+    margin-right: 4em;
+}
+form {
+    margin: 3em 0 0 1em;
+    padding-left: 3em;
+}
+#name,
+#email,
+#text {
+    width: 70%;
+}
+.copy-right {
+    padding: 0.5em 0 0 6em;
+}
+}
+/*from 550px to 767px*/
+@media only screen and (max-width: 767px){
+.circle-white1,
+.circle-white2 {
+    width: 90%;
+    height: 70%;
+    left: 5%;
+}
+.circle-white1 {
+    top: 8%;
+}
+.circle-white2 {
+    top: 12%;
+}
+.section-one {
+    background-position: left;
+}
+.text-one {
+    padding: 1em 3em;
+}
+.section-two {
+    height: 140vh;
+}
+.text-two {
+    width: 100%;
+    margin: -2em 0 0;
+    padding: 1em;
+}
+.text-two h3 {
+    font-size: 120%;
+}
+.text-two p {
+    font-size: 90%;
+}
+.text-three {
+    padding: 4em 5em 2em;
+}
+.circle-img1,
+.circle-img2 {
+    width: 92%;
+    height: 46%;
+    margin-right: 0.7em;
+}
+.circle-img1 {
+    margin-top: 1em;
+}
+.circle-img2{
+    padding-top: 2em;
+}
+.section-four {
+    height: 150vh;
+}
+.copy-right {
+    padding: 2em 0 0 7.5em;
+}
+
+}
+   
+/*small phones: from 0 to 550px;*/
+@media only screen and (max-width: 550px){
+.circle-white1,
+.circle-white2 {
+    border-radius: 21%;
+    width: 96%;
+    height: 74%;
+    left: 2%;
+}
+.circle-white1 {
+    top: 5%;
+}
+.circle-white2 {
+    top: 12%;
+}
+.section-one {
+    height: 90vh;
+    background-position: right;
+}
+.text-one {
+    padding-top: 0.5em;
+}
+.section-two {
+    height: 140vh;
+}
+.text-two {
+    width: 100%;
+    margin: -2em 0 0;
+    padding: 1em;
+}
+.text-two h3 {
+    font-size: 120%;
+}
+.text-two p {
+    font-size: 90%;
+}
+.circle-img1,
+.circle-img2 {
+    width: 92%;
+    height: 38%;
+    margin-right: 0.7em;
+}
+.circle-img1 {
+    margin-top: 1em;
+}
+.circle-img2{
+    padding-top: 2em;
+}
+.section-three {
+    height: 90vh;
+}
+.text-three {
+    padding: 3em 3em 2em;
+}
+.text-three h3 {
+    font-size: 100%;
+    padding-bottom: 0.5em;
+}
+.text-three p {
+    font-size: 75%;
+}
+.section-four {
+    height: 140vh;
+}
+form {
+    margin: 3em 0;
+    padding-left: 3em;
+    width: 100%;
+}
+#name,
+#email,
+#text { 
+    width: 80%;
+}
+.copy-right {
+    padding: 2em 0 0 2.5em;
+}
+
+}
