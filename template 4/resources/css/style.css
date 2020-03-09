@@ -1,0 +1,274 @@
+/*---------BASIC SETUP----------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    background-color: rgb(235, 235, 235);
+    font-size: 20px;
+    text-rendering: optimizeLegibility;   
+}
+/*-------REUSABLE COMPONENTS------*/
+.clearfix {
+    clear: both;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgb(168, 168, 168);
+}
+ul li {
+    list-style: none;
+}
+
+aside::after {
+    content: " ";
+    display: block;
+    background-color: rgb(173, 173, 173);
+    width: 100%;
+    height: 1px;
+    clear: right;
+}
+main {
+    float: right;
+    padding-left: 2em;right: ;
+    margin-top: 2em;
+ }
+.title, .subtitle {
+     text-transform: uppercase;
+}
+.title {
+    font-size: 110%;
+}
+.subtitle, p {
+    color: rgb(148, 148, 148);
+    font-size: 70%;
+}
+.fragment {
+    margin-top: 2em;
+    background-color: #ffffff;
+}
+.text h4 {
+    font-size: 60%;
+    display: inline-block;
+}
+.text time {
+    display: inline-block;
+    font-size: 50%;
+}
+
+/*-------GRID------*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*-----------HEADER------------*/
+header {
+    background-color: #ffffff;
+    width: 100%;
+    height:8vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nav {
+    float: left;
+}
+.nav-home { 
+    font-weight: bold;
+    border-right: 1px solid rgb(173, 173, 173);
+    font-size: 60%;
+    display: inline-block;
+    padding: 1.5em;
+    color: #000000;
+}
+.nav-bar {
+    display: inline-block;
+}
+.nav-bar .item {
+    display: inline-block;    
+    padding:0 0.5em;
+    border-right: 1px solid rgb(173, 173, 173);
+    font-size: 60%;
+}
+.nav-bar .item a {
+    color: rgb(168, 168, 168);
+}
+.search {
+    float: right;
+}
+.search a {
+    color: rgb(168, 168, 168);
+    padding: 1.2em;
+    font-size: 70%;
+    border-left: 1px solid rgb(173, 173, 173);
+}
+.nav-bar a:hover,
+.search a:hover {
+    color: #000000;
+}
+/*-----------LOGO------------*/
+.logo { 
+    float: left;
+    padding-left: 3em;
+    margin-top: 4em;
+}
+.img-logo {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.suggested-site {
+    text-decoration: underline;
+    color: rgb(148, 148, 148)
+}
+.suggested-site:hover {
+    color: #000000;
+}
+.logo .title { 
+    font-size: 130%;
+}
+.logo .subtitle {
+    font-size: 80%;
+    padding-bottom: 3em;
+}
+/*-----------FRAGMENT------------*/
+.left, .right {
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+.left {
+    padding: 3em 0 3em 1.7em;
+    border-right: 1px solid rgb(173, 173, 173);
+}
+.left :first-child {
+    margin-bottom: 1em;
+}
+.right {
+    padding: 3.2em 0 ;
+    float: right;
+}
+.right .avatar { 
+    display: inline-block;
+    border-radius: 50%;
+    width: 12%;
+    vertical-align: middle;
+}
+.right .date {
+    display: inline-block;
+    margin-left: 6.8em;
+    font-size: 60%;
+    margin-bottom: 0.6em;
+}
+.right .identification {
+    font-size: 40%;
+    text-decoration: underline;
+    margin-left: 12.5em;
+}
+.right .identification:hover { 
+    color: #000000;
+}
+figure {
+    display: inline-block;
+    margin-left: 1.7em;
+    margin-top: 2em;
+}
+figure .pic {
+    display: block;
+    width: 100%;
+    margin-bottom: 2em;
+}
+figcaption {
+    color: rgb(148, 148, 148);
+    font-size: 80%;
+    line-height: 1.8;
+}
+.link {
+    border: 1px solid rgb(173, 173, 173);
+    padding: 1em 1.5em;
+    font-size: 70%;
+    margin: 2.5em 0 2.5em  2.3em;
+    color: #000000;
+}
+.link:hover {
+    background-color: rgb(219, 219, 219) ;
+}
+.numb-icon {
+    float: right;
+    text-align: right;
+    margin-right: 2em;
+    margin-top: 1em;
+}
+.numb-icon .active li { 
+    display: inline-block;
+    margin: 3em 1em;
+    padding-left: 1em;
+    text-align: right;
+    color: rgb(168, 168, 168);
+    border-left: 1px solid rgb(173, 173, 173);
+    padding-left: 2em;
+    font-size: 50%; 
+}
+.numb-icon .active li a {
+    text-decoration: underline;  
+}
+.numb-icon .active li a:hover { 
+    color: #000000;
+}
+.numb-icon .active li:first-child {
+    border: none
+}
+.btn-pre a {
+    color: rgb(168, 168, 168);
+}
+.btn-pre a:hover {
+    color: #000000;
+}
+.btn-next { 
+    margin-left: -2.5em;
+}
+/*-----------------------------*/
+.four-adventure {
+    float: left; 
+    margin-top: 3em ;
+    padding-left: 3em;
+}
+.adventure {
+    width: 100%;  
+    margin-bottom: 2em;
+}
+.caption {
+    background-color: #ffffff;
+}
+.adventure img {
+    display: block;
+    width: 100%;
+}
+.caption img { 
+    display: inline-block;
+    border-radius: 50%;
+    width: 12%;
+}
+.caption .text { 
+    display: inline-block;
+    margin: 1em 0 1em 1em;
+}
+
+.caption .text time :first-child {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+
+.resort {
+    float: left;
+}
