@@ -31,7 +31,7 @@ aside::after {
     background-color: rgb(173, 173, 173);
     width: 100%;
     height: 1px;
-    clear: right;
+    clear: both;
 }
 main {
     float: right;
@@ -53,12 +53,25 @@ main {
     background-color: #ffffff;
 }
 .text h4 {
-    font-size: 60%;
-    display: inline-block;
+    font-size: 65%;
 }
 .text time {
-    display: inline-block;
     font-size: 50%;
+}
+.text time :first-child {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+/*-------LINK------*/
+.link {
+    border: 1px solid rgb(201, 201, 201);
+    padding: 1em 1.5em;
+    font-size: 70%;
+    margin: 2.5em 0 2.5em  2.3em;
+    color: #000000;
+}
+.link:hover {
+    background-color: rgb(219, 219, 219) ;
 }
 
 /*-------GRID------*/
@@ -192,16 +205,6 @@ figcaption {
     font-size: 80%;
     line-height: 1.8;
 }
-.link {
-    border: 1px solid rgb(173, 173, 173);
-    padding: 1em 1.5em;
-    font-size: 70%;
-    margin: 2.5em 0 2.5em  2.3em;
-    color: #000000;
-}
-.link:hover {
-    background-color: rgb(219, 219, 219) ;
-}
 .numb-icon {
     float: right;
     text-align: right;
@@ -263,12 +266,75 @@ figcaption {
     margin: 1em 0 1em 1em;
 }
 
-.caption .text time :first-child {
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+/*-------FIVE RESORTS--------*/
+.five-resorts {
+    float: left; 
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding-left: 3em;
+}
+.resort { 
+    width: 100%;
+    padding: 1em 0;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.resort:last-child {
+    border: none;
+    padding-bottom: 2em;
+   
+}
+.resort .text {
+    display: inline-block;
+    vertical-align: middle;
 }
 
+.resort .view {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+    padding-right: 0.5em;
+}
+/*--------footer--------*/
+.about {
+    margin: 3em 0; 
+    padding-left: 3em;
+    clear: left;
+}
+.description {
+    width: 100%;
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+.description h3 {
+    font-size: 65%;
+    margin: 3em 0 2em;
+    text-transform: uppercase;
+}
+.description p {
+    line-height: 1.8;
+}
 
-.resort {
-    float: left;
+.btn-learn {
+    font-size: 50%;
+    margin-left: 0;
+}
+
+.nav-network {
+    width: 100%;
+}
+
+.social-networks li {
+    display: inline-block;
+    padding: 1.5em 0.3em 1em 0;
+}
+.social-networks li a {
+    font-size: 60%;
+}
+.copy-right {
+    color: rgb(173, 173, 173);
+    font-size: 40%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.copy-right a {
+    color: rgb(173, 173, 173);
 }
