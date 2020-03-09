@@ -8,7 +8,10 @@ html,
 body {
     background-color: rgb(235, 235, 235);
     font-size: 20px;
-    text-rendering: optimizeLegibility;   
+    text-rendering: optimizeLegibility; 
+}
+body {
+    margin: 0 auto;
 }
 /*-------REUSABLE COMPONENTS------*/
 .clearfix {
@@ -24,7 +27,6 @@ a {
 ul li {
     list-style: none;
 }
-
 aside::after {
     content: " ";
     display: block;
@@ -35,7 +37,7 @@ aside::after {
 }
 main {
     float: right;
-    padding-left: 2em;right: ;
+    padding-left: 2em;
     margin-top: 2em;
  }
 .title, .subtitle {
@@ -51,6 +53,7 @@ main {
 .fragment {
     margin-top: 2em;
     background-color: #ffffff;
+    border: 1px solid rgb(201, 201, 201);
 }
 .text h4 {
     font-size: 65%;
@@ -96,7 +99,7 @@ header {
     top: 0;
     left: 0;
 }
-.nav {
+nav {
     float: left;
 }
 .nav-home { 
@@ -121,6 +124,7 @@ header {
 }
 .search {
     float: right;
+    padding-left: 13em;
 }
 .search a {
     color: rgb(168, 168, 168);
@@ -136,9 +140,11 @@ header {
 .logo { 
     float: left;
     padding-left: 3em;
-    margin-top: 4em;
+    margin-top: 4.5em;
 }
 .img-logo {
+    display: inline-block;
+    width: 30%;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 .suggested-site {
@@ -148,27 +154,33 @@ header {
 .suggested-site:hover {
     color: #000000;
 }
-.logo .title { 
-    font-size: 130%;
+.name-site {
+    width: 100%;
+    margin-top: 2em;
 }
-.logo .subtitle {
+.name-site .title { 
+    font-size: 140%;
+}
+.name-site .subtitle {
     font-size: 80%;
     padding-bottom: 3em;
+    line-height: 1.8em;
 }
 /*-----------FRAGMENT------------*/
-.left, .right {
+.fragment .head {
     border-bottom: 1px solid rgb(173, 173, 173);
 }
 .left {
-    padding: 3em 0 3em 1.7em;
+    float: left;
+    padding: 1.8em 0 1.8em 1.7em;
     border-right: 1px solid rgb(173, 173, 173);
 }
 .left :first-child {
     margin-bottom: 1em;
 }
 .right {
-    padding: 3.2em 0 ;
     float: right;
+    padding: 2em 1em 1em 0;
 }
 .right .avatar { 
     display: inline-block;
@@ -208,8 +220,8 @@ figcaption {
 .numb-icon {
     float: right;
     text-align: right;
-    margin-right: 2em;
-    margin-top: 1em;
+    margin-right: 3em;
+    margin-top: -5em;
 }
 .numb-icon .active li { 
     display: inline-block;
@@ -238,6 +250,13 @@ figcaption {
 }
 .btn-next { 
     margin-left: -2.5em;
+}
+.btn-pre {
+    margin-left: -1.6em;
+}
+.btn-next, 
+.btn-pre {
+    float: left;
 }
 /*-----------------------------*/
 .four-adventure {
@@ -318,16 +337,21 @@ figcaption {
     margin-left: 0;
 }
 
-.nav-network {
+.nav-networks {
     width: 100%;
 }
-
+.social-networks {
+    margin-bottom: 1em;
+}
 .social-networks li {
     display: inline-block;
     padding: 1.5em 0.3em 1em 0;
 }
 .social-networks li a {
     font-size: 60%;
+}
+.social-networks li a:hover {
+    color: #000000;
 }
 .copy-right {
     color: rgb(173, 173, 173);
