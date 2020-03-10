@@ -1,3 +1,4 @@
+/**/
 @media (min-width: 1280px) {
 .col-xl-1 {width: 8.33%;}
 .col-xl-2 {width: 16.66%;}
@@ -12,6 +13,7 @@
 .col-xl-11 {width: 91.66%;}
 .col-xl-12 {width: 100%;}
 }
+/**/
 @media (min-width:1024px) and (max-width:1279.99px) {
 .col-lg-1 {width: 8.33%;}
 .col-lg-2 {width: 16.66%;}
@@ -26,7 +28,7 @@
 .col-lg-11 {width: 91.66%;}
 .col-lg-12 {width: 100%;}
 }
-
+/**/
 @media (min-width: 768px) and (max-width:1023.99px) {
 .col-md-1 {width: 8.33%;}
 .col-md-2 {width: 16.66%;}
@@ -41,8 +43,9 @@
 .col-md-11 {width: 91.66%;}
 .col-md-12 {width: 100%;}
 }
-
+/**/
 @media (max-width:767.99px) {
+    
 .col-sm-1 {width: 8.33%;}
 .col-sm-2 {width: 16.66%;}
 .col-sm-3 {width: 25%;}
@@ -55,4 +58,102 @@
 .col-sm-10 {width: 83.33%;}
 .col-sm-11 {width: 91.66%;}
 .col-sm-12 {width: 100%;}
+/*PARTICIPATION*/
+main {
+    padding: 0;
+    margin-top: -2em;
+}
+.four-adventure, .five-resorts, .about {
+    padding-left: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+/*LOGO*/
+.logo {
+    text-align: center;
+    padding: 0;
+    margin-right: 0;
+    background-color: rgb(235, 235, 235);
+}
+/*HEADER*/
+.nav-home {
+    border: none;
+    font-size: 80%;
+    padding: 1em 2em;
+}
+header {
+    margin-right: 0;
+}
+.nav-bar, .search {
+    display: none;
+}
+/*MAIN*/
+.fragment {
+    border: none;
+    text-align: center;
+}
+.fragment .head {
+    border-bottom: none;
+}
+.left {   
+    padding: 1.8em 0 0.5em;
+    border-right: none;
+}
+.left .subtitle {
+    font-size: 78%;
+}
+.right .date {
+    width: 100%;
+    font-size: 90%;
+    margin-left: 0;
+}
+.right .identification {
+    display: none;
+}
+.numb-icon {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+    margin-top: 2em;
+}
+.four-adventure {
+    margin-top: 1em;
+}
+/*ASIDE*/
+figure {
+    margin-left: 0;
+    margin-top: 1em; 
+}
+figcaption {
+    text-align: justify;
+}
+.five-resorts {
+    margin-right: 1em;
+}
+/*BUTTON*/
+.link {
+    padding: 1em 8em;
+    font-size: 75%;
+    margin: 1em 0.3em 2.5em;
+    text-align: center;
+}
+.btn-pre {
+    margin-left: 1em;
+    padding: 1em 11.2em;
+}
+.btn-next {
+    margin-left: 1em;
+    padding: 1em 12.5em;
+    margin-top: -1em;
+}
+.submit {
+    margin: 1.5em 0;
+}
+.submit {
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.btn-learn {
+    padding: 1em 9.5em;
+}
+
 }

@@ -2,7 +2,12 @@
 * {
     padding: 0;
     margin: 0;
+    border: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+
 }
 html,
 body {
@@ -22,7 +27,7 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: rgb(168, 168, 168);
+    color: rgb(156, 156, 156);
 }
 ul li {
     list-style: none;
@@ -54,6 +59,9 @@ main {
     margin-top: 2em;
     background-color: #ffffff;
     border: 1px solid rgb(201, 201, 201);
+}
+.fragment:last-child { 
+    border-bottom: 1px solid rgb(201, 201, 201);
 }
 .text h4 {
     font-size: 65%;
@@ -98,6 +106,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+    border-bottom: 1px solid rgb(206, 206, 206);
 }
 nav {
     float: left;
@@ -119,15 +128,18 @@ nav {
     border-right: 1px solid rgb(173, 173, 173);
     font-size: 60%;
 }
+.nav-bar .item:last-child {
+  border: none;  
+} 
 .nav-bar .item a {
-    color: rgb(168, 168, 168);
+    color: rgb(156, 156, 156);
 }
 .search {
     float: right;
     padding-left: 13em;
 }
 .search a {
-    color: rgb(168, 168, 168);
+    color: rgb(156, 156, 156);
     padding: 1.2em;
     font-size: 70%;
     border-left: 1px solid rgb(173, 173, 173);
@@ -149,7 +161,7 @@ nav {
 }
 .suggested-site {
     text-decoration: underline;
-    color: rgb(148, 148, 148)
+    color: rgb(156, 156, 156)
 }
 .suggested-site:hover {
     color: #000000;
@@ -221,14 +233,14 @@ figcaption {
     float: right;
     text-align: right;
     margin-right: 3em;
-    margin-top: -5em;
+    margin-top: 1em;
 }
 .numb-icon .active li { 
     display: inline-block;
     margin: 3em 1em;
     padding-left: 1em;
     text-align: right;
-    color: rgb(168, 168, 168);
+    color: rgb(156, 156, 156);
     border-left: 1px solid rgb(173, 173, 173);
     padding-left: 2em;
     font-size: 50%; 
@@ -243,20 +255,13 @@ figcaption {
     border: none
 }
 .btn-pre a {
-    color: rgb(168, 168, 168);
+    color: rgb(156, 156, 156);
 }
 .btn-pre a:hover {
     color: #000000;
 }
-.btn-next { 
-    margin-left: -2.5em;
-}
-.btn-pre {
-    margin-left: -1.6em;
-}
-.btn-next, 
-.btn-pre {
-    float: left;
+.btn-pre, .btn-next {
+    margin: 2.5em 0 2.5em;
 }
 /*-----------------------------*/
 .four-adventure {
@@ -354,11 +359,11 @@ figcaption {
     color: #000000;
 }
 .copy-right {
-    color: rgb(173, 173, 173);
+    color: rgb(156, 156, 156);
     font-size: 40%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 .copy-right a {
-    color: rgb(173, 173, 173);
+    color: rgb(156, 156, 156);
 }
